@@ -1,0 +1,143 @@
+/* CSS styles @ Anshu */
+
+body {background: #EEE url(images/bg.jpg) repeat-x scroll 0px 0px;; color:#000; font-family: Helvetica, Arial; font-size: 0.78em; line-height: 1.8em; margin:0px; padding:0px;}
+
+	
+	h1, h2, h3, h4 {font-weight: normal; margin: 0px; padding: 1em 0px 0px 0px; }
+
+	h1 {font-size: 2.5em; color:#DDD; margin: 0px; padding:0.4em 0px 0.2em 0px; font-family: 'Raleway', Helvetica; }
+	h2 {margin: 0px; padding: 0px; }
+	
+	h3 {font-size: 1.2em; text-transform: uppercase; color:#111; margin-bottom: 1em;}
+	h4 {margin:0px; padding:0px 0px 0.25em 0px; font-size:1.2em; }
+	
+	h3.xyzSection {padding-bottom: 5px; margin-bottom: 0; font-size:1.4em; }
+	
+	#quickies ul {margin: 1em 0px; padding: 0px; list-style: none;}
+	#quickies ul li {border-bottom: 1px solid #CCC; margin-bottom: 1em; padding-bottom: 0.25em;}
+	#quickies ul li ul li {border-bottom: none; margin-bottom: 0.25em;}
+	
+	dd ul {margin-left:1em; padding:0px 0px 0px 1em; list-style: square; }
+	dd ul li {margin-bottom:0.25em; padding:0.1em 0.5em; }
+	
+	dt { margin-top:1em; padding:0.5em; border: 1px solid #FFF; display: block; cursor: pointer; clear: both; border-radius: 15px 0px 15px 0px; -webkit-border-radius: 15px 0px 15px 0px; -moz-border-radius: 15px 0px 15px 0px; }
+	dl dt:hover { border: 1px solid #BBB; background: url(images/plus.gif) 98% 50% no-repeat; }
+	dl dt.expanded { background:#FFF; border-radius: 15px 0px 0px 0px; -webkit-border-radius: 15px 0px 0px 0px; -moz-border-radius: 15px 0px 0px 0px; }
+	dl dt.expanded:hover { cursor: pointer; background: #FFF url(images/minus.gif) 98% 50% no-repeat; }
+	dt .item {padding-left:1em; }
+	dt.notoggle:hover {background: none;}
+	
+	
+	dd { margin: 0px 0px 1em 0em; padding: 0.5em 1em; border-radius: 0px 0px 15px 0px; -webkit-border-radius: 0px 0px 15px 0px; -moz-border-radius: 0px 0px 15px 0px; }
+		
+	a, a:link, a:visited, a:active {color:cornflowerblue; text-decoration: none; }
+	a:hover {color:#000; }
+	
+	.flyImageleft {float:left; margin-right: 1em; padding:0.1em;}
+	.flyLeft {float:left; width:30%; }
+	.flyRight {float:right; width: 65%; }
+	
+	.cls {clear:both; }
+	.spacer {padding:1em 0px;}
+	 
+	#quickies {padding-bottom:0.5em; }
+	#quickies ul {margin: 0px; }
+	#quickies ul li ul {border:none; }
+	
+	#fullies {padding-top:2em;}
+		#fullies dd {background:#FFF; border-top:3px dashed #EEE; }
+		
+	dl dt.active-pos, #fullies dd.active-pos {background: #333; color: #fff; border:0;}
+	dl dt.active-pos:hover {background: #222;}
+	
+	* .active-pos a, * .active-pos a:hover, * .active-pos a:link {border-bottom-color: #666}
+	* .active-pos a:hover {color:#eee;}
+	
+	
+	#all { background: url(images/topShade.png) top center no-repeat; }
+	.stdDiv {width:75%; margin:0px auto; color:#000; min-width: 750px;}
+	
+	ul.skills li { color:#666; padding:0px 0px 0.25em 0px; font-size:1.2em; }
+	
+	.details, .previewArea{display: none; height: auto;}
+	
+	.more {font-size:0.9em; color:#CCC; cursor: pointer;}
+	.more:hover {color:#FFF; }
+					
+	.copyright {text-align: center; font-size: 0.84em; color:#666; border-top: 1px solid #CCC; background: #DEE}
+	
+	#ieNotice {padding:1em; display: none; font-weight: bold; font-family: Verdana;}
+	
+	.highlight {color:#666; }
+	
+	.detailOptions {cursor: pointer; padding: 0em 0.5em;}
+	
+	.toLeft {float:left; margin-right:1em; }
+	.toRight {float:right; margin-left:1em; }
+	.frameImage {background:#FFF; padding:1em; border:1px solid #555; }
+	.borderTop {border-top:1px solid #CCC; }	
+	
+	#secondary {background: #FFF; border-top: 1px solid #999; margin-top:1em; }
+	#secondary h3 {color: #999; font-size: 1.1em;}
+	.flyShort {float: left; width: 34%; font-size: 0.9em;}
+	.flyMini {width: 25%; float: left;font-size: 0.9em;}
+	.padRight {margin-right: 2%}
+	.padLeft {margin-left: 2%;}
+	#secondary b {color: #888; font-weight: normal; text-transform: uppercase; border-bottom: 1px solid #666; display: block;}
+	#secondary b.x {display: inline; color: #000; font-weight: bold; border: 0; text-transform: none; }
+	#secondary ul {list-style: none; margin:0px; padding: 0px; }
+	#secondary ul li {margin-bottom: 0.5em; }
+	#secondary ul li ul li {color: #555; padding: 0.2em; margin-bottom: 0em;}
+	#secondary a, #secondary a:link, #secondary a:visited {color:cornflowerblue; border-bottom: 0;}
+	#secondary a:hover {color: #555;}
+	
+	.flyLong {}
+	
+/* FACEBOX CSS */
+#facebox .b {background:url(images/b.png);}
+#facebox .tl {background:url(images/tl.png);}
+#facebox .tr {background:url(images/tr.png);}
+#facebox .bl {background:url(images/bl.png);}
+#facebox .br {background:url(images/br.png);}
+#facebox {position: absolute;top: 0;left: 0;z-index: 100;text-align: left;}
+#facebox .popup {position: relative;}
+#facebox table {border-collapse: collapse;}
+#facebox td {border-bottom: 0;padding: 0;}
+#facebox .body {padding: 10px;background: #fff;width: 370px;}
+#facebox .loading {text-align: center;}
+#facebox .image {text-align: center;}
+#facebox img {border: 0;margin: 0;}
+#facebox .footer {border-top: 1px solid #DDDDDD;padding-top: 5px;margin-top: 10px;text-align: right;}
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {height: 10px;width: 10px;overflow: hidden;padding: 0;}
+#facebox_overlay {position: fixed;top: 0px;left: 0px;height:100%;width:100%;}
+.facebox_hide {z-index:-100;}
+.facebox_overlayBG {background-color: #000;z-index: 99;}
+* html #facebox_overlay { /* ie6 hack */position: absolute;height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');}
+
+* a img {border: none;}
+
+.circular { border:1px solid #ccc; width: 100px; height: 100px; border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px; background: url("Me100.jpg") no-repeat; }
+
+
+@media print {
+	/* style sheet for print goes here */
+	body {font-size: 0.7em; background: #FFF; color: #000; line-height: 1.4em;}
+		.noPrint, .more {display: none; visibility: hidden;}
+		body>div.xyzSection {position: relative; background: #FFF; border:none; padding:1em 0px 0px 0px; }
+		h1, h2, h3, h4, #quickies, #all {color: #000;}
+		#all {margin:0em; padding: 0px;}
+		.stdDiv { width:100%; }
+	a, a:link, a:visited, a:active {color: #000; text-decoration: none; border:none; }
+	.spacer {padding:0.5em 0px;}
+	#secondary {background: #FFF; color: #000; }
+	#secondary h3 {color: #333; }
+	#secondary a {border-bottom: none; }
+	
+	ul.skills li {font-style: italic; color:#333;}
+	ul.skills li h4 {font-style: normal; color:#000; }
+	
+	.date {color: #333; font-size: 0.9em;}
+	.contact {color: #000 }
+	.contact b {color:#333; display: block; width: 50px; float: left; text-align: left ; padding-right: 0.5em; }
+	.contact a, .contact a:link, .contact a:visited, .contact a:active {color:#000; border-bottom: none;}
+}
