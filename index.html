@@ -30,6 +30,14 @@
         width: 650px;
       }
 
+      .ancient {
+        font-size: 80%;
+
+        & h3 {
+          font-size: 1.2rem;
+        }
+      }
+
       hr {
         border: 0;
         border-bottom: 1px dashed #ccc;
@@ -38,6 +46,13 @@
 
       pre hr {
         margin: 0;
+      }
+
+      .gravatar {
+        border-radius: 10%;
+        width: 200px;
+        float: right;
+        margin-left: .5rem;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -60,10 +75,12 @@
   <body>
     <main>
 
+    <img class="gravatar" src="https://avatars.githubusercontent.com/u/818810?v=4" />
+
     <h1>Hello, just call me Anshu.<br/>I'm a <kbd>tinkerer</kbd> who loves to design + build complex systems that are simple to use. I have a particular interest in <kbd>search systems</kbd>, <kbd>networks</kbd> and <kbd>data visualization</kbd>. I am presently based in Ottawa, Canada</h1>
     <h2>I currently work at <kbd>Shopify</kbd> as a software engineer. In the past, I've held positions relating to data analysis and data warehouse development at BlackBerry, and done a fair bit of web development on a contractual/ad-hoc basis.</h2>
     
-    <br />Contact: <a href="mailto:anshudeep.mathur@gmail.com">anshudeep.mathur@gmail.com</a> | <a href="https://ca.linkedin.com/in/anshudeepmathur">LinkedIn</a> | <a href="https://github.com/sprine">GitHub</a>
+    <br /><b>Contact:</b> <a href="mailto:anshudeep.mathur@gmail.com">anshudeep.mathur@gmail.com</a> | <a href="https://ca.linkedin.com/in/anshudeepmathur">LinkedIn</a> | <a href="https://github.com/sprine">GitHub</a>
 
     <h4>Skills over time</h4>
     <pre class="skills">
@@ -130,6 +147,7 @@ web dev
 </ul>
     
 <hr />
+<div class="ancient">
     <h3>Past Web design and development projects</h3>
     <ul>
       <li><strong>Pamela Gough Election 2010 & 2014 Websites.</strong> This was the official website of Pamela Gough's election campaign for Public School Trustee in the Toronto municipal elections.</li>
@@ -154,7 +172,7 @@ web dev
       <li><strong>Chat system created using jQuery</strong></li>
       <li><strong>PL/SQL procedure to obtain book information from Amazon using the ISBN number</strong></li>
     </ul>
-
+  </div>
   </main>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
