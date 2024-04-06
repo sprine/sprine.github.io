@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anshudeep Mathur's personal website">
 
     <style>
       body { 
@@ -11,13 +12,14 @@
 
       h1, h2 { font-weight: 250; margin-top: 0;}
       h2 { font-size: 1.2rem; margin: 0; }
-      h3 { font-size: 1.6rem; margin: 0; }
-      h4 { text-transform: uppercase; }
-      kbd { background-color: lightyellow; font-family: inherit;}
+      h3 {  margin: 0; }
+      h4 { margin: 0; }
+      kbd { background-color: rgb(255, 255, 238); font-family: inherit;}
       time { font-size: 8pt; }
 
       main {
         padding: 5vw;
+        box-shadow: 0 0 .2rem rgba(0,0,0,.2);
       }
 
       caption { color: #555; font-style: italic;}
@@ -26,24 +28,8 @@
         border-bottom: 1px dotted #000;
       }
       
-      .grey {
-        color: #999;
-      }
-
       .scroll-container {
         overflow: auto;
-      }
-
-      pre {
-        width: 650px;
-      }
-
-      .ancient {
-        font-size: 80%;
-
-        & h3 {
-          font-size: 1.2rem;
-        }
       }
 
       hr {
@@ -52,8 +38,12 @@
         background: #999;      
       }
 
-      pre hr {
-        margin: 0;
+      pre.skills {
+        width: 650px;
+      }
+
+      .nested {
+        font-size: 80%;
       }
 
       .gravatar {
@@ -61,6 +51,10 @@
         width: 200px;
         float: right;
         margin-left: .5rem;
+      }
+
+      .print {
+        display: none;
       }
 
       @media only screen and (max-width: 600px) {
@@ -76,10 +70,46 @@
           color: #fff;
         }
         kbd {
-          color: #000;
+          color: #fff;
+          background-color: rgba(255, 255, 238, 0.2); 
         }
         a {
           color: #fff;
+        }
+      }
+
+      @media print {
+        h1, h2 { font-weight: 250; margin-top: 0; font-size: unset;}
+        h2 { margin: 0; font-size: unset; }
+
+        main {
+          padding: 0;
+          box-shadow: unset;
+        }
+
+        .skills-container {
+          float: right;  
+          margin: 1rem;
+          padding: 0.5rem;
+          background: #f9f9f9;
+          border-radius: .2rem;
+        }
+
+        pre.skills {
+          white-space: preserve-breaks;
+          width: auto;
+        }
+
+        .print {
+          display: unset;
+        }
+
+        .noprint {
+          display: none;
+        }
+
+        .gravatar {
+          display: none;
         }
       }
     </style>
@@ -91,80 +121,86 @@
     <main>
 
     <img class="gravatar" src="https://avatars.githubusercontent.com/u/818810?v=4" />
-
+    <h1 class="print"><b>Anshudeep Mathur</b></h1>
     <h1>Hello, just call me Anshu.<br/>I'm a <kbd>tinkerer</kbd> who loves to design + build complex systems that are simple to use. I have a particular interest in <kbd>search systems</kbd>, <kbd>networks</kbd> and <kbd>data visualization</kbd>. I am presently based in Ottawa, Canada</h1>
     <h2>I currently work at <kbd>Shopify</kbd> as a software engineer. In the past, I've held positions relating to data analysis and data warehouse development at BlackBerry, and done a fair bit of web development on a contractual/ad-hoc basis.</h2>
     
-    <br /><b>Contact:</b> <a href="mailto:anshudeep.mathur@gmail.com">anshudeep.mathur@gmail.com</a> | <a href="https://ca.linkedin.com/in/anshudeepmathur">LinkedIn</a> | <a href="https://github.com/sprine">GitHub</a>
-
-    <h4>Skills over time</h4>
+    <br />
+    <div><b>Contact:</b> 
+      <a href="mailto:anshudeep.mathur@gmail.com">anshudeep.mathur@gmail.com</a> 
+      <span class="print">| <a href="https://anshuweb.com">anshuweb.com</a></span>
+      <span class="noprint">| <a href="https://ca.linkedin.com/in/anshudeepmathur">LinkedIn</a></span> 
+      | <a href="https://github.com/sprine">sprine @ GitHub</a></div>
+    <br/>
+    <div class="skills-container">
+    <h4>Technical skills over time <kbd style="display: block; font-size: 8pt; font-weight: 300;">★ = actively practiced.<br/><b style="font-weight: 800">Bolded</b> = I think I'm good at this.</kbd></h4>
     <div class="scroll-container">
     <pre class="skills">
-                                                                      <span data-tippy-content="large language models">llm</span>
-                                                                    blender		
-                                                                 three.js
-                                                              remix + <span data-tippy-content="typescript">ts</span>
-                                                            prototyping
-                                                         <span class="grey">ambigious problem spaces</span> 
-                                                    gcp and infrastructure
-                                                d3.js
-                                          data analysis
-                                          <hr />
-                                       event streaming
-                                      scala
+                                                                    <span data-tippy-content="Blender for experimenting and learning about 3D">Blender</span>
+                                                                 <span data-tippy-content="three.js for exploring canvas rendering and 3D vizualizations in the browser">three.js</span>
+                                                              ★ <span data-tippy-content="Using Remix + typescript for app development">Remix + TS</span> 
+                                                          ★ <span data-tippy-content="I love working in an ambigious and new problem space - with potential for discoveries"><b>Prototyping</b></span>
+                                                    <span data-tippy-content="Google Cloud Platform">GCP</span> infrastructure
+                                                ★ <span data-tippy-content="I use d3.js for data-driven visualizations and powerful single-page tools."><b>d3.js</b></span>
+                                          data analysis in Python
+                                         ★ <b>reshaping and transforming data</b>
+                                        event streaming using spark
+                                      <span data-tippy-content="Very limited experienced, mainly to write UDFs and streaming logic for Spark">scala</span>
                                   react
                                 ruby on rails
-                             pyspark
-                             <hr />
-                    elasticsearch
+                             <span data-tippy-content="Using Spark primarily through Python (PySpark) and for ETL.">spark</span>
+                    ★ <span data-tippy-content="I use ES for search, as an analytics engine and for fast text processing.">elasticsearch</span>
                 sas text miner
               oracle text
-            oracle pl/sql
-            <hr />
-    python
-  sql
- css
-web dev                    
-------------▴--------------▴--------------------------------------------- today
-            blackberry     shopify
-    </pre>
-  </div>
+            oracle pl/sql and etl
+    ★ <span data-tippy-content="I've been coding in Python for over a decade, and still learning"><b>python</b></span>
+  ★ <span data-tippy-content="I've been writing SQL for over a decade for data warehousing and application development."><b>sql</b></span>
+★ <span data-tippy-content="I've been building web sites since the 90s, and continue to do so with new frameworks and libraries."><b>web dev + css</b></span>
+<div class="noprint">
+------------▴--------------▴------------------▴------------------▴------- today
+            2011           2015               2020               2023</div></pre>
+    </div>
+    </div>
 
-    <h3>Staff Engineer @ People Analytics</h3>
-    <kbd><b>Shopify</b>, Ottawa, Canada (Remote) – (September 2015 - Present)</kbd>
+    <h3>Work experience</h3>
+    <div class="nested">
+      <h3>Staff Engineer @ People Analytics</h3>
+      <kbd><b>Shopify</b>, Ottawa, Canada (Remote) – (September 2015 - Present)</kbd>
 
-<p>The engineering role at this scope (Staff) changes rather frequently for me. Some patterns that stand out:
-<ul>
-  <li>prototyping and curiosity to explore new spaces continues to be the most important aspect. That's mainly how I learn. While most ideas remain sketches (in Excalidraw, Figma, Sketch, whiteboards or on paper) and abandoned code branches (an attempt, usually a script or data visualization of some sort, sometimes a Jupyter notebook), some threads do end up being useful and introduce a block that connects. These moments are rare, especially when working with driven and like-minded people, but can help significantly.
-  <li>because of my area of work over the past years in People Analytics, I've learned the (current) shape and ideas behind some highly sensitive internal systems. Data flows everywhere, and wrangling it (and surrounding code) often feels more like molding a lump of clay than dealing with hard technology. It can also sometimes be similarly exhausting.
-  <li>The breath of responsibilities, expectations, doubts and mental models evolve constantly. Having an understanding manager or lead who travels alongside never hurts.
-</ul>
-<b>I have also held the following roles at Shopify:</b>
-<ul>
-  <li>Senior Data Engineer, People Analytics. April 2019 - September 2022.
-  <li>Senior Data Engineer, Data Apps. August 2017 - April 2019
-  <li>Data Engineer, Shopify Plus. September 2015 - August 2017
-</ul>
+  <p>The engineering role at this scope (Staff) changes rather frequently for me. Some patterns that stand out:
+  <ul>
+    <li>prototyping and curiosity to explore new spaces continues to be the most important aspect. That's mainly how I learn. While most ideas remain sketches (in Excalidraw, Figma, Sketch, whiteboards or on paper) and abandoned code branches (an attempt, usually a script or data visualization of some sort, sometimes a Jupyter notebook), some threads do end up being useful and introduce a block that connects. These moments are rare, especially when working with driven and like-minded people, but can help significantly.
+    <li>because of my area of work over the past years in People Analytics, I've learned the (current) shape and ideas behind some highly sensitive internal systems. Data flows everywhere, and wrangling it (and surrounding code) often feels more like molding a lump of clay than dealing with hard technology. It can also sometimes be similarly exhausting.
+    <li>The breath of responsibilities, expectations, doubts and mental models evolve constantly. Having an understanding manager or lead who travels alongside never hurts.
+    <li>Technologies (in no particular order):</b> Python scripting, Pandas, LLM, DuckDB, BigQuery, SQLite, GitHub Actions, GCP, d3.js, Remix, TypeScript, CUE lang, Ruby. 
+    <li>Soft skills experience: stakeholder (and expectation) management, planning, company building, first-principles thinking, building Talent systems
+  </ul>
+  
+  <b>I have also held the following roles at Shopify:</b>
+  <ul>
+    <li>Senior Data Engineer, People Analytics. April 2019 - September 2022.
+    <li>Senior Data Engineer, Data Apps. August 2017 - April 2019
+    <li>Data Engineer, Shopify Plus. September 2015 - August 2017
+  </ul>
 
-<h3>Data Analyst + Data Architect</h3>
-<kbd><b>BlackBerry</b>, Waterloo, Canada – (May 2014 - Oct 2019)</kbd>
-<ul>
-  <li>Support, design and develop data pipelines for business critical applications and dashboards that impact decisions made within all departments of the Quality organization.
-  <li>Perform ad-hoc data analysis and investigations, as well as debugging Oracle PL/SQL and SQL performance issues.
-  <li>Responsible for developing and implementing a longer-term plan for migrating ETL processing from the current dimensionally-modelled Oracle database into a non-relational storage structure.
-  <li>Provided Python, Elasticsearch and Git tutorials for members of the Analytics team. This allowed many SAS and SQL-intensive processes to be migrated to Python while retaining (or improving) the execution time and supportability.
-  <li>Performed various experiments in order to research and evaluate solutions for building a data mining platform from scratch - the tests covered everything from designing easy user interfaces to the technical considerations. The findings had a direct impact on the design and implementation details of a cross-functional Six Sigma project, leading to significant cost savings and efficiencies.
-</ul>
-<b>I have also held the following roles at BlackBerry:</b>
-<ul>
-<li>Analyst, Voice of the Customer. August 2014 - December 2014.
-  <li>Quality Manager, Enterprise. May 2014 - August 2014.
-  <li>Database Application Analyst. September 2012 - May 2014.
-  <li>Database Systems Developer. Jan 2011 - Sept 2012.
-</ul>
-    
-<hr />
-<div class="ancient">
+  <h3>Data Analyst + Data Architect</h3>
+  <kbd><b>BlackBerry</b>, Waterloo, Canada – (Jan 2011 - September 2015)</kbd>
+  <ul>
+    <li>Support, design and develop data pipelines for business critical applications and dashboards that impact decisions made within all departments of the Quality organization.
+    <li>Perform ad-hoc data analysis and investigations, as well as debugging Oracle PL/SQL and SQL performance issues.
+    <li>Responsible for developing and implementing a longer-term plan for migrating ETL processing from the current dimensionally-modelled Oracle database into a non-relational storage structure.
+    <li>Provided Python, Elasticsearch and Git tutorials for members of the Analytics team. This allowed many SAS and SQL-intensive processes to be migrated to Python while retaining (or improving) the execution time and supportability.
+    <li>Performed various experiments in order to research and evaluate solutions for building a data mining platform from scratch - the tests covered everything from designing easy user interfaces to the technical considerations. The findings had a direct impact on the design and implementation details of a cross-functional Six Sigma project, leading to significant cost savings and efficiencies.
+  </ul>
+  <b>I have also held the following roles at BlackBerry:</b>
+  <ul>
+  <li>Analyst, Voice of the Customer. August 2014 - August 2014.
+    <li>Quality Manager, Enterprise. May 2014 - August 2014.
+    <li>Database Application Analyst. September 2012 - May 2014.
+    <li>Database Systems Developer. Jan 2011 - Sept 2012.
+  </ul>
+  <hr />
+  <div class="nested noprint">
     <h3>Past Web design and development projects</h3>
     <ul>
       <li><strong>Pamela Gough Election 2010 & 2014 Websites.</strong> This was the official website of Pamela Gough's election campaign for Public School Trustee in the Toronto municipal elections.</li>
@@ -188,6 +224,18 @@ web dev
       <li><strong>Ad-Hoc Search Engine written in Python.</strong> Group project for the DCCT*4090 - Information Storage and Retrieval Systems course.</li>
       <li><strong>Chat system created using jQuery</strong></li>
       <li><strong>PL/SQL procedure to obtain book information from Amazon using the ISBN number</strong></li>
+    </ul>
+    <hr />
+  </div>
+  </div>
+
+  <div>
+    <h3>Education</h3>
+    <ul>
+      <li>
+        <strong>BAComp - Applied Computing, with a focus on Wireless Technologies.</strong><br/>
+        University of Guelph-Humber, Toronto, Canada. 2006 - 2010.
+      </li>
     </ul>
   </div>
   </main>
