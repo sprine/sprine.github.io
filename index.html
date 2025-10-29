@@ -18,7 +18,7 @@
       time { font-size: 8pt; }
 
       main {
-        padding: 5vw;
+        padding: 5vw 10vw;
         box-shadow: 0 0 .2rem rgba(0,0,0,.2);
       }
 
@@ -43,7 +43,7 @@
       }
 
       .nested {
-        font-size: 80%;
+        font-size: 100%;
       }
 
       .gravatar {
@@ -66,7 +66,7 @@
 
       @media (prefers-color-scheme: dark) {
         body {
-          background-color: #000;
+          background-color: #0D5661;
           color: #fff;
         }
         kbd {
@@ -80,8 +80,12 @@
         [data-tippy-content] {
           border-bottom: 1px dotted #fff;
         }
-      
+
+        .dark-logo {
+          filter: invert(1);
+        }
       }
+
 
       @media print {
         h1, h2 { font-weight: 250; margin-top: 0; font-size: unset;}
@@ -173,7 +177,7 @@
 
     <h3>Work experience</h3>
     <div class="nested">
-      <img src="images/shopify_logo_black.png" width=150 align="right" />
+      <img src="images/shopify-mono-black.png" width=150 align="right" class="dark-logo" />
       <h3><kbd>Staff Engineer @ The Catalogue</kbd></h3>
       <kbd><b>Shopify</b> &mdash; March 2025 - Present</kbd>
       <ul>
@@ -201,7 +205,7 @@
         <li>Data Engineer, Shopify Plus. September 2015 - August 2017
       </ul>
 
-      <img src="images/BlackBerry.jpg" width=150 align="right" />
+      <img src="images/BlackBerry.png" width=150 align="right" class="dark-logo" />
       <h3>Data Analyst + Data Architect</h3>
       <b>BlackBerry</b>, Waterloo, Canada &mdash; Jan 2011 - September 2015
       <ul>
@@ -252,7 +256,7 @@
       <h3>Education</h3>
       <ul>
         <li>
-          <img src="images/University-of-Guelph-Humber-01.png" align="right" width="150" />
+          <img src="images/University-of-Guelph-Humber-01.png" align="right" width="150" class="dark-logo" />
           <strong>BAComp - Applied Computing, with a focus on Wireless Technologies.</strong><br/>
           University of Guelph-Humber, Toronto, Canada. 2006 - 2010.
         </li>
